@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Giovanna">
+<title>Tela de Login</title>
+</head>
+<body>
+<style>
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #41c1ba;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container {
+    background: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.user-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.login-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-form button {
+    flex: 1;
+    padding: 10px;
+    background-color: #41c1ba;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px; /* Adicione margem para separar os botões */
+}
+
+.signup-button {
+    width: 100%;
+}
+
+.signup-container {
+    margin-top: 20px;
+}
+
+.signup-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.dir:hover {
+    background-color: black;
+    color: white;
+}
+
+.eclipse {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 930px;
+    background: #365b6d;
+    z-index: 1;
+}
+</style>
+<div class="login-container">
+<div class="user-image">
+<img src="./img/usuario.png" alt="Usuário">
+<h2>Escala Digital</h2>
+<h5>Simplificando o Tempo, Elevando a Qualidade de Vida</h5>
+</div>
+<form class="login-form">
+<input type="text" placeholder="Nome de usuário">
+<input type="password" placeholder="Senha">
+<div class="button-container">
+    <a href="#">
+        <button type="submit" class="signup-button" style="margin-left: 40%;" id="entrar-button">
+            Entrar
+        </button>
+    </a>
+    <div>
+        <a href="#">
+            <button class="dir" id="cadastro-link">Cadastrar-se</button>
+        </a>
+    </div>
+</div>
+</form>
+<div class="signup-container">
+<a class="register-link" href="#">Esqueci a Senha</a>
+</div>
+</div>
+<div class="eclipse"></div>
+
+<script>
+    //Quando clicar no botão "Entrar"
+    document.getElementById("entrar-button").addEventListener("click", function() {
+        //Entrou
+        window.location.href = "bemsucedido.html";
+    })
+
+    //Quando clicar no botão "Cadastrar-se"
+    document.getElementById("cadastro-link").addEventListener("click", function() {
+        // Redirecione para a página de cadastro
+        window.location.href = "bemsucedido.html";
+    });
+</script>
+</body>
+</html>
