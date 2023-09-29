@@ -1,0 +1,192 @@
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #41c1ba;
+}
+
+.navegation{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+
+}
+.navegation h1{
+    margin-left: 36%;
+}
+/* Estilos para o botão de menu dropdown da navbar */
+.dropdown {
+    float: left;
+    position: relative;
+}
+
+.menu-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown:hover .menu-content {
+    display: block;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0px 50px 0px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.description{
+    width: 100%;
+    margin-inline: 10px;
+}
+.projeto-description{
+    padding: 50% 0%;
+}
+
+.container{
+    display: flex;
+    height: 115vh;
+    align-items: center;
+    justify-content: center;
+    perspective: 90rem;
+    perspective-origin: 30% 60%;
+}
+.div-tranform{
+    display: flex;
+    transform: rotateX(10deg) rotateY(15deg) rotateZ(-9deg) scale3d(1, 1, -0.9)
+    scale(1.1) translateX(50px);
+}
+.card{
+    display: inline-block;
+    background-color: #41c1ba;
+    color: #365b6d;
+    border-radius: 8px;
+    padding: 0px 18px;
+    width: 244px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    transform: translate(0);
+}
+.card::before{
+    content: ("");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.card h2{
+    text-transform: capitalize;
+}
+.card-1{
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+.card-1:hover{
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px;
+}
+.card-1::before{
+    background: linear-gradient(90deg, #365b6d 0%, #365b6d ,100%);
+}
+.card-2{
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+.card-2:hover{
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #365b6d;
+}
+.card-2::before{
+    background: linear-gradient(90deg, #365b6d 0%, #365b6d 100%);
+}
+.card-3{
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+}
+.card-3:hover{
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #365b6d;
+}
+.card-3::before{
+    background: linear-gradient(90deg, #365b6d 0%, #365b6d 100%);
+}
+.eclipse {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 930px;
+    background: #365b6d;
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para o botão "Comece Agora" */
+.start-button {
+    display: block;
+    /* Transforma o link em um elemento de bloco */
+    width: 150px;
+    /* Define a largura do botão */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #555;
+}

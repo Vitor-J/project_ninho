@@ -5,160 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escala Digital</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/landing.css">
 </head>
 
 <body>
-    <style>
-        body {
-            @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
-            margin: 0;
-            padding: 0;
-            font-family: 'Fira Sans', sans-serif;
-        }
-
-        /* Estilos para o botão de menu dropdown da navbar */
-        .dropdown {
-            float: left;
-            position: relative;
-        }
-
-        .menu-button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .menu-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            z-index: 1;
-        }
-
-        .menu-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .menu-content a:hover {
-            background-color: black;
-            color: white;
-        }
-
-        .dropdown:hover .menu-content {
-            display: block;
-        }
-
-        header {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 50px 0;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        .features {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 0;
-            background-color: #fff;
-        }
-
-        .feature {
-            text-align: center;
-            max-width: 300px;
-            padding: 20px;
-        }
-
-        .eclipse {
-            position: absolute;
-            top: 50%;
-            left: -20%;
-            width: 1000px;
-            height: 1000px;
-            border-radius: 930px;
-            background: #365b6d;
-            z-index: 1;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        /* Estilo para o botão "Comece Agora" */
-        .start-button {
-            display: block;
-            /* Transforma o link em um elemento de bloco */
-            width: 150px;
-            /* Define a largura do botão */
-            margin: 0 auto;
-            /* Centraliza horizontalmente */
-            text-align: center;
-            /* Centraliza o texto */
-            padding: 10px 20px;
-            /* Espaçamento interno */
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        .start-button:hover {
-            background-color: #555;
-        }
-    </style>
-
-    <nav class="navbar">
-        <div class="dropdown">
-            <button class="menu-button">Menu</button>
-            <div class="menu-content">
-                <a href="#">Página Inicial</a>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contato</a>
-            </div>
-        </div>
-        </div>
-    </nav>
-
-
     <header>
-        <h1>Escala Digital</h1>
+        <div class="navegation">
+            <h1>Escala Digital</h1>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <button class="menu-button">Menu</button>
+                    <div class="menu-content">
+                        <a href="#">Página Inicial</a>
+                        <a href="#">Sobre Nós</a>
+                        <a href="#">Serviços</a>
+                        <a href="#">Contato</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+        
         <p>Simplificando o tempo, elevando  a qualidade de vida.</p>
         <p>Gerencie com eficiência as escalas de trabalho de seus funcionários e promova uma melhor qualidade de vida no trabalho.</p>
     </header>
 
-    <section class="project-description">
-        <h2>Projeto "Escala Digital"</h2>
-        <p>O projeto "Escala Digital" é uma inovadora iniciativa desenvolvida por três talentosos jovens - Giovanna, Tainá e João - como parte da edição piloto do Projeto Ninho. O Projeto Ninho, fruto de uma colaboração entre o Sebrae e a Fundacentro, tem como principal objetivo acolher jovens economicamente e socialmente vulneráveis, apoiando-os em sua jornada para o mercado de trabalho.</p>
+    <div id="description">
+        <id class="project-description">
+            <h2>Projeto "Escala Digital"</h2>
+            <p>O projeto "Escala Digital" é uma inovadora iniciativa desenvolvida por três talentosos jovens - Giovanna, Tainá e João - como parte da edição piloto do Projeto Ninho. O Projeto Ninho, fruto de uma colaboração entre o Sebrae e a Fundacentro, tem como principal objetivo acolher jovens economicamente e socialmente vulneráveis, apoiando-os em sua jornada para o mercado de trabalho.</p>
+            
+            <p>O "Escala Digital" é uma solução criada pelos alunos do Projeto Ninho com o propósito de revolucionar a forma como as empresas gerenciam os horários de seus funcionários. Esse quadro de horários digital permite que as empresas distribuam facilmente informações de horários em pequenas telas no ambiente de trabalho, proporcionando aos funcionários um acesso conveniente e evitando jornadas extenuantes e cansativas.</p>
         
-        <p>O "Escala Digital" é uma solução criada pelos alunos do Projeto Ninho com o propósito de revolucionar a forma como as empresas gerenciam os horários de seus funcionários. Esse quadro de horários digital permite que as empresas distribuam facilmente informações de horários em pequenas telas no ambiente de trabalho, proporcionando aos funcionários um acesso conveniente e evitando jornadas extenuantes e cansativas.</p>
+            <p>Uma das principais vantagens do "Escala Digital" é a substituição dos tradicionais quadros de horários em papel, que costumam ser afixados nas paredes das empresas. Com essa solução inovadora, os funcionários podem acessar seus horários de trabalho de forma rápida e eficiente, promovendo uma experiência de trabalho mais organizada.</p>
+            
+            <p>Além disso, o "Escala Digital" tem o potencial de gerar novas estatísticas e insights valiosos sobre o mercado de empregos informais. Com a tecnologia em seu centro, esse projeto não apenas melhora a vida dos trabalhadores, mas também contribui para uma compreensão mais profunda das tendências e desafios no setor de trabalho.</p>
+            
+            <p>O Projeto Ninho não apenas proporcionou a oportunidade para jovens talentosos como Giovanna, Tainá e João desenvolverem essa solução inovadora, mas também demonstra o compromisso com a formação de jovens empreendedores e inovadores que podem impactar positivamente suas comunidades e o mercado de trabalho.</p>
+            
+            <p>O "Escala Digital" representa uma história inspiradora de como a educação empreendedora e a inovação podem transformar vidas e abrir novos horizontes para futuras oportunidades.</p>
+        </id>  
+    </div>  
     
-        <p>Uma das principais vantagens do "Escala Digital" é a substituição dos tradicionais quadros de horários em papel, que costumam ser afixados nas paredes das empresas. Com essa solução inovadora, os funcionários podem acessar seus horários de trabalho de forma rápida e eficiente, promovendo uma experiência de trabalho mais organizada.</p>
-        
-        <p>Além disso, o "Escala Digital" tem o potencial de gerar novas estatísticas e insights valiosos sobre o mercado de empregos informais. Com a tecnologia em seu centro, esse projeto não apenas melhora a vida dos trabalhadores, mas também contribui para uma compreensão mais profunda das tendências e desafios no setor de trabalho.</p>
-        
-        <p>O Projeto Ninho não apenas proporcionou a oportunidade para jovens talentosos como Giovanna, Tainá e João desenvolverem essa solução inovadora, mas também demonstra o compromisso com a formação de jovens empreendedores e inovadores que podem impactar positivamente suas comunidades e o mercado de trabalho.</p>
-        
-        <p>O "Escala Digital" representa uma história inspiradora de como a educação empreendedora e a inovação podem transformar vidas e abrir novos horizontes para futuras oportunidades.</p>
-    </section>    
-    
-    <section class="features">
+
+    <div class="container">
+        <div class="div-transform">
+            <div class="card card-1">
+                <h2>Agendamento de Horários</h2>
+                <p>Agende seus compromissos de forma eficiente e organizada.</p>
+            </div>
+            <div class="card card-2">
+                <h2>Controle de Jornada</h2>
+                <p>Acompanhe a jornada de trabalho de seus funcionários de maneira simples.</p>
+            </div>
+            <div class="card card-3">
+                <h2>Cadastro de Funcionários</h2>
+                <p>Registre informações de seus funcionários de forma segura.</p>
+            </div>
+        </div>
+    </div>
+    <!--<div id="features">
         <div class="feature">
             <h2>Agendamento de Horários</h2>
             <p>Agende seus compromissos de forma eficiente e organizada.</p>
@@ -175,7 +81,7 @@
             <h2>Cadastro de Funcionários</h2>
             <p>Registre informações de seus funcionários de forma segura.</p>
         </div>
-    </section>
+    </div>!-->
 
     <a href="login.html" class="start-button">Comece Agora</a>
 
