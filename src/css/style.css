@@ -71,6 +71,10 @@ body {
     color: white;
 }
 
+.dir{
+    text-decoration: none;
+    
+}
 .dir:hover {
     background-color: black;
     color: white;
